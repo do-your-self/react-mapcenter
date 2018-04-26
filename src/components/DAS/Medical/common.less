@@ -1,0 +1,85 @@
+@import "../../../utils/theme/medicalTheme/medicalTheme";
+//医疗全局样式
+
+/**
+*左侧菜单面板设置
+*/
+@left-panel-border-color: #00a29a;
+@left-panel-title-color: white;
+@left-panel-title-font: "微软雅黑";
+@left-panel-title-font-size: 18px;
+:global {
+  .ant-select-dropdown {
+    background-color: rgba(3,21,29,.8);
+    border-radius: 0px; 
+    font-size: 14px;
+    border: 1px solid #003936;
+  }
+  .ant-select-dropdown-menu-item {
+    background-color: rgba(3,21,29,.8);
+    color: #fff;
+    line-height: 24px;
+    border-radius: 0px;
+  }
+  .ant-select-dropdown-menu-item:first-child {
+    border-radius: 0px;
+  }
+  .ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover,.ant-select-dropdown-menu-item-selected{
+    background-color: rgba(3,21,29,.8);
+    color: #fff;
+    border: 1px solid #00a29a;
+    line-height:22px;
+    border-radius: 0;
+  }
+
+}
+.customSelect {
+  :global {
+    // select 样式重置
+    .ant-select-selection {
+      background-color: rgba(0,0,0,0);
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid #0a2e34;
+      border-top-width: 0;
+      width: 164px;
+      margin-top: 14px;
+    }
+    .ant-select-selection--single {
+      height: 22px;
+    }
+    .ant-select-arrow:before {
+      color: #28ab9a;
+    }
+    .ant-select-selection-selected-value {
+      color: #28ab9a; 
+    }
+    .ant-select-selection:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .LeftView__customSelect___1u9UR .ant-select-focused .ant-select-selection, .LeftView__customSelect___1u9UR .ant-select-selection:active {
+      border: 0;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .ant-select-focused .ant-select-selection, .ant-select-selection:active {
+      border: 0;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .ant-select-selection__rendered {
+      line-height: 14px;
+      font-size: 14px;
+    }
+    .ant-select-arrow {
+      margin-top: -10px;
+      font-size: 14px;
+    }
+  }
+}
+
+
