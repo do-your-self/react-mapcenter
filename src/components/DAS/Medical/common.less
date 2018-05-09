@@ -1,0 +1,204 @@
+@import "../../../utils/theme/medicalTheme/medicalTheme";
+//医疗全局样式
+
+/**
+*左侧菜单面板设置
+*/
+@left-panel-main-color: #00a29a;
+@left-panel-border-color: #0a2e34;
+@left-panel-bg-color: rgba(3,21,29,.8);
+@left-panel-title-color: white;
+@left-panel-title-font: "微软雅黑";
+@left-panel-title-font-size: 18px;
+@left-panel-select-width: 164px;
+:global {
+  /*滚动条样式*/
+  .ant-cascader-menu::-webkit-scrollbar, .ant-select-dropdown-menu::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+  }
+  .ant-cascader-menu::-webkit-scrollbar-thumb, .ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 3px @left-panel-main-color;
+    background: @left-panel-main-color;
+  }
+  .ant-cascader-menu::-webkit-scrollbar-track, .ant-select-dropdown-menu::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 3px @left-panel-bg-color;
+    border-radius: 0;
+    background: @left-panel-bg-color;
+  }
+  form .ant-cascader-picker {
+    width: 164px;
+  }
+  .ant-form-item-label label {
+    color: @left-panel-title-color; 
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+  .ant-cascader-picker {    
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 0;
+    width: @left-panel-select-width;
+  }
+  .ant-input {
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid @left-panel-border-color;
+  }
+  .ant-input:hover {
+    border-color: @left-panel-border-color;
+  }
+  .ant-input:focus {
+    // border-color: ;
+    border: 0;
+    border-bottom: 1px solid @left-panel-border-color;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+  .ant-cascader-picker-arrow{  
+    right: 10px;
+    color: @left-panel-main-color; 
+    margin-top: -5px;
+    font-size: 14px;
+    width: 14px;  
+    height: 14px;
+  }
+  .ant-cascader-picker-label {
+    color: @left-panel-main-color;
+    font-size: 14px;
+    padding: 0 12px 0 0;
+  }
+  .ant-cascader-picker-arrow:before {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .ant-cascader-picker:focus .ant-cascader-input {
+    border-color: @left-panel-border-color;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }  
+  .ant-cascader-picker-clear{
+    background: @left-panel-bg-color;
+    color: @left-panel-main-color;
+  }
+  .ant-cascader-picker-clear:hover {
+    color: @left-panel-main-color;
+  }
+  .ant-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+    /* WebKit browsers */   
+    color: @left-panel-main-color;
+    font-size: 14px;   
+  }   
+  .ant-input:-moz-placeholder, textarea:-moz-placeholder {   
+    /* Mozilla Firefox 4 to 18 */   
+    color: @left-panel-main-color;
+    font-size: 14px;   
+  }   
+  .ant-input::-moz-placeholder, textarea::-moz-placeholder {   
+    /* Mozilla Firefox 19+ */   
+    color: @left-panel-main-color;
+    font-size: 14px;   
+  }   
+  .ant-input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+    /* Internet Explorer 10+ */   
+    color: @left-panel-main-color;
+    font-size: 14px;   
+  } 
+  .ant-cascader-menu:last-child, .ant-cascader-menu:only-child {
+    border-radius: 0px;
+  }
+  .ant-cascader-menus,.ant-select-dropdown {
+    background-color: @left-panel-bg-color;
+    border-radius: 0px; 
+    font-size: 14px;
+    border: 1px solid #003936;
+  }
+  .ant-cascader-menu {
+    border-right: 0;
+  }
+  .ant-cascader-menu-item,.ant-select-dropdown-menu-item {
+    background-color: @left-panel-bg-color;
+    color: @left-panel-title-color;
+    line-height: 24px;
+    border-radius: 0px;
+    border: 1px solid @left-panel-bg-color;
+  }
+  .ant-cascader-menu-item:first-child,.ant-select-dropdown-menu-item:first-child {
+    border-radius: 0px;
+  }
+  .ant-cascader-menu-item-active, .ant-cascader-menu-item:hover{
+    background-color: @left-panel-bg-color;
+    color: @left-panel-title-color;
+    border: 1px solid @left-panel-main-color;
+    border-radius: 0;
+  }
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover,.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover,.ant-select-dropdown-menu-item-selected{
+    background-color: @left-panel-bg-color;
+    color: @left-panel-title-color;
+    font-weight: 400;
+    border: 1px solid @left-panel-main-color;
+    border-radius: 0;
+  }
+
+}
+.customSelect {
+  :global {
+    // select 样式重置
+    .ant-input,.ant-cascader-picker,.ant-select-selection {
+      background-color: rgba(0,0,0,0);
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid @left-panel-border-color;
+      border-top-width: 0;
+      width: @left-panel-select-width;
+      margin-top: 8px;
+    }
+    .ant-select-selection--single {
+      height: 22px;
+    }
+    .ant-select-selection__rendered {
+      margin-left: 0;
+    }
+    .ant-select-arrow:before {
+      color: @left-panel-main-color;
+    }
+    .ant-select-selection-selected-value {
+      color: @left-panel-main-color; 
+    }
+    .ant-select-selection:focus {
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .LeftView__customSelect___1u9UR .ant-select-focused .ant-select-selection, .LeftView__customSelect___1u9UR .ant-select-selection:active {
+      border: 0;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .ant-select-focused .ant-select-selection, .ant-select-selection:active {
+      border: 0;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .ant-select-selection__rendered {
+      line-height: 14px;
+      font-size: 14px;
+    }
+    .ant-select-arrow {
+      margin-top: -10px;
+      font-size: 14px;
+    }
+  }
+}
+
+

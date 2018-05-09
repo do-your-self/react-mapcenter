@@ -1,0 +1,43 @@
+@import "../../../../utils/theme/medicalTheme/medicalTheme";
+@import "../common";
+.backgroundView {
+  display: block;
+  width: 20%;
+  z-index: 200;
+  position: absolute;
+  left: 24px;
+  top: 5%;
+  // bottom:calc(19% + 50px);
+  background: @base-view-background-color;
+  /*display: inline-block;*/
+  /*opacity: 0.5;*/
+  /* background: orange; */
+}
+.logo {
+  width: 100%;
+  height: 50px;
+  margin-top: -20px;
+  background: url('../../../../assets/Medical/title.png') no-repeat;
+  background-size: 300px 45px;
+  background-position: left;
+}
+.panel {
+  color: @left-panel-title-color;
+  line-height: @left-panel-title-font-size;
+  font-size: @left-panel-title-font-size;
+  font-family: @left-panel-title-font;
+  margin: 15px 0 10px;
+  letter-spacing: 2px;
+  .icon {
+    height: @left-panel-title-font-size;
+    float: left;
+    margin-right: 12px;
+    border-radius: 2px;
+    border-left: 4px solid @left-panel-main-color;
+  }
+  .selectLabel {
+    color: @left-panel-title-color;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

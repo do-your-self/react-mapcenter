@@ -1,0 +1,16 @@
+.backgroundView{
+  width: 100%;
+  height: 60px;
+  background: white;
+  /* color: white; */
+  font-size: 18px;
+  line-height: 60px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+  background: url('../../../assets/home/navigationlogo.png') no-repeat;
+  background-size: 512px 41px;
+  float: left;
+  vertical-align: middle;
+  background-position:left;
+  /* margin-top: 50%;
+  transform: translateY(-50%); */
+}

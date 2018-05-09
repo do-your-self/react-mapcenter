@@ -1,0 +1,53 @@
+//透明度设置
+// @xsrgb
+// .backgroundTtansparent(@color;@alpha){
+// 		@background: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+// 		@ieAlpha:argb(@background);
+// 		background: @color;
+// 		background: @background;
+// 		background: transparent/9;
+// 		zoom: 1;
+// 		filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlpha}, endColorstr=@{ieAlpha})";
+// 		-ms-filter: ~'"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlpha}, endColorstr=@{ieAlpha})"';
+// }
+/**
+* 医疗菜单背景颜色设置
+*/
+// .menu-background-color{
+//   .backgroundTtansparent(#212F35,1);
+// }
+
+@base-color:#091A38;
+
+@menu-background-color:#212F35;
+@menu-background-alpha:1;
+@menu-select-background-color:#03151D;
+@menu-unselect-background-color:#212F35;
+
+
+/**
+* 菜单字体大小和颜色
+*/
+@menu-title-font-size:13px;
+@menu-title-font-family:Microsoft YaHei;
+@menu-select-title-color:white;
+@menu-unselect-title-color:white;
+
+/**
+*图表模板颜色
+*/
+
+
+
+@xsr:9%;
+@xsg:26%;
+@xsb:56%;
+@xsrhsl:((@xsr) / 255%);
+@xsghsl:((@xsg) / 255%);
+@xsbhsl:((@xsb) / 255%);
+
+@base-view-background-color:fade(@base-color, 20);
+
+
+
+// @base-view-background-color:fade(hsl((9/255)%, (26/255)%, (56/255)%), 20%);
